@@ -117,7 +117,7 @@ class Collector(DatagramServer):
 
 if __name__ == '__main__':
     #TODO: move IP and port to config
-    server = Collector(("0.0.0.0",6005))
+    server = Collector(("127.0.0.1",2055))
     try:
         server.serve_forever()
     except KeyboardInterrupt:
